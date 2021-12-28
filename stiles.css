@@ -1,0 +1,24 @@
+.background {
+    background-color: rgb(150, 150, 150);
+    font-family: 'Roboto', sans-serif;
+}
+
+.cv_slots{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cv_slots .cv_section {
+    width: 80%;
+    margin: auto;
+}
+
+.cv_slots .cv_section .cv_section_title {
+    font-size: 1.5rem;
+}
+
+.cv_slots .cv_section .cv_section_content {
+    width: 80%;
+    margin: auto;
+}
