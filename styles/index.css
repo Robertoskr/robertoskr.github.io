@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu{
+    display:flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.menu p{
+    color: white;
+    transition: all .2s ease;
+}
+
+.menu p:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
