@@ -1,6 +1,7 @@
 body{
     background-color: black;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 .menu{
@@ -18,4 +19,37 @@ body{
 .menu p:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+
+
+.content{
+    text-align: center;
+    width: 50%;
+    margin: 10rem auto auto auto;
+}
+
+.content p{
+    font-size: 1.3rem;
+}
+
+.input{
+    width: 30%;
+    margin: 10rem auto auto auto;
+}
+
+.seach_input_container{
+    width: 100%;
+    position: relative;
+}
+
+.input_placeholder{
+    margin-bottom: -3rem;
+}
+
+.search_input{
+    width: 100%;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    padding: 1rem;
 }
