@@ -1,0 +1,32 @@
+.tutorial_tittle{
+    font-size: 2rem;
+    text-align: center;
+    margin: 4rem auto 4rem auto;
+}
+
+.tutorial_subtittle{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 3rem auto 3rem auto;
+}
+
+.tutorial_text{
+    width: 80%;
+    margin: auto;
+}
+
+.tutorial_img_container{
+    width: 80%;
+    margin: 4rem auto 4rem auto;
+}
+
+.tutorial_img{
+    width: 100%;
+    margin: auto;
+}
+
+.tutorial_list{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}

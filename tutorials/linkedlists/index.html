@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/tutorial.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet"> 
+    <title>Roberto Kalinovskyy</title>
+</head>
+<body>
+    <div class='menu'>
+        <p onclick="(window.location='/blog')">Blog</p>
+        <p onclick="(window.location='/tutorials')">Tutorials</p>
+        <p onclick="(window.location='/about')">About</p>
+    </div>
+
+    <p class="tutorial_tittle">Linked Lists</p>
+    <p class="tutorial_text">
+        Welcome to the first tutorial about data structures! 
+        In this tutorial we are going to learn about Linked Lists, one of the most basic 
+        computer science data structure, but this does not mean that is not useful.
+        <br><br>
+        For starting this lesson we first need to understand how plain arrays really work,
+        if you are new to programming, this may seem like magic to you, but is a very 
+        simple and fundamental concept to cs.
+    </p>
+    <div class="tutorial_img_container">
+        <img class="tutorial_img" src="linkedlists.png">
+    </div>
+
+    <p class="tutorial_text">
+        As you can see, internally is a adjacent sequence of bytes, were one sits 
+        in front of each other.
+        When you have a code like this:<br>
+        <code>
+            arr = [1,2,3,4,5] <br>
+            print(arr[0]) <br>
+            print(arr[1]) <br>
+            print(arr[3]) <br>
+        </code>
+        The variable "arr" is not storing the whole array, it is storing a pointer or
+        reference to the first element in the array (to the memory allocation of the first element)
+        when wee type arr[0] we are accesing the addres of the first element + offset , 
+        where offset is the difference (idx - 0), in this case is : location + sizeof(data stored) * 0,
+        if we are trying to access the idx 3, were accesing location + sizeof(data stored) * 3,
+        and with these were accesing the exact memory allocation were our desired data is stored.
+        <br>
+        Okey, now knowing that we can continue to linked lists, 
+        weve seen that in plain arrays we are accesing the next element knowing the memory allocation of the previous,
+        and we can access randomly all the array, this is the main difference, in linked lists each node is not adjacent, and 
+        we can't do this operations, instead, each node of a linked list have the information to the next node,
+        for example: <br>
+        <b>
+            [1,2,3,4,5] whill be: [1, location of(2)], [2, location of(3)], [3, location of(4)], [4, location of(5)], [5, no next node]
+        </b> 
+        <br>
+        <br>
+        With this were are losing random access, for accesing the idx 3 we need to go first in idx 0, 1, 2 for searching the idx 3,
+        but we have some advantages over arrays:
+        <br>
+    </p>
+    <div class="tutorial_list">
+        <li>
+            <ul>Dinamic memory growth (the linked list can grow easily)</ul>
+            <ul>Insert first and Insert last operations run in constant O(1) time</ul>
+        </li>
+    </div>
+
+    <br> 
+    <p class="tutorial_text">And some disadvantages : </p>
+    <div class="tutorial_list">
+        <li>
+            <ul>No random access</ul>
+            <ul>If wee know how much memory wee need less efficient</ul>
+        </li>
+    </div>
+
+    <div clas="tutorial_img_container">
+        <img class="tutorial_img" src="linkedliststut.png">
+    </div>
+
+    <p class="tutorial_subtittle">Video tutorials</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8EsxiWbcX_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ocXR7f811PI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
